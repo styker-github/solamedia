@@ -1,0 +1,2 @@
+.portfolio .item .portfolio-img{height:auto !important}.portfolio .item img{height:250px;object-fit:cover;object-position:50% 0;width:100%;transition:object-position 3s ease-in}.portfolio .item:hover img{object-position:50% 100%}
+/*# sourceMappingURL=style.min.css.map */
