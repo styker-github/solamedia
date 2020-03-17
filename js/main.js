@@ -17,12 +17,12 @@
     })
   }
 
-  function r(n) {
-    var t = e(n).attr("href");
-    e("html, body").animate({
-      scrollTop: e(t).offset().top - 50
-    }, 1e3)
-  }
+  // function r(n) {
+  //   var t = e(n).attr("href");
+  //   e("html, body").animate({
+  //     scrollTop: e(t).offset().top - 50
+  //   }, 1e3)
+  // }
 
   function l() {
     e(n).width() > 1024 ? e.stellar() : (e.stellar("destroy"), e(".parallax").css("background-position", "center"))
@@ -93,13 +93,13 @@
     }
   });
   var f = e(".menu-item a:not(.url)");
-  f.click(function(e) {
-    e.preventDefault(), r(this)
-  }), e(n).on("load", function() {
-    l(), c()
-  }), e(n).on("resize", function() {
-    c()
-  });
+  // f.click(function(e) {
+  //   e.preventDefault(), r(this)
+  // }), e(n).on("load", function() {
+  //   l(), c()
+  // }), e(n).on("resize", function() {
+  //   c()
+  // });
   var m = e(".fix-header").offset().top;
   e(n).scroll(function() {
     e(this).scrollTop() > 300 ? e(".scroll-top-arrow").fadeIn("slow") : e(".scroll-top-arrow").fadeOut("slow"), e(this).scrollTop() >= m ? e(".fix-header").addClass("sticky") : e(this).scrollTop() <= m && e(".fix-header").removeClass("sticky")
